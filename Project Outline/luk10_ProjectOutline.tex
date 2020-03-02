@@ -1,0 +1,121 @@
+\documentclass[]{article}
+
+%opening
+\title{Game Data Mining\\Project Outline}
+
+\author{Luke Korpalski\\luk10@aber.ac.uk\\
+	    GG4R: Computer Science And Artificial Intelligence\\
+		CS39440\\
+	  \\Richard Jenson\\rkj@aber.ac.uk\\}
+  
+\date{February 2020\\
+      v1.0 Release}
+
+
+\begin{document}
+
+\maketitle
+
+\newpage
+\section{Project Description}
+The Game Data Mining major project aims to extract useful information from a video-game dataset.
+This is a research-centric project with some software deliverables developed to model the data.
+Originally based on a competition to model a dataset of the MMORPG `\textit{Blade and Soul}', the project is now more open-ended due to the dataset no longer being available online.
+\\
+
+Research using game datasets typically seeks to model player behaviour to maximise profitability of the game \cite{kaw09}, to study human behaviour, or to test economic theory \cite{shen12}.
+A study \cite{lee18} of game log data from the MMORPG `\textit{Lineage}' used social network analysis on in-game transactions (or \textit{trades}) between players.
+The modelled data was then used to identify networks of black-market real-money trading (RMT).
+
+This project proposes to use similar techniques to model economic data in other multiplayer games.
+In-game market data is available for the MMO `\textit{EVE Online}' through an official web API \cite{ccp}.
+This seems a good starting point for the project.
+
+The models produced in this project will be visualised and evaluated, with comparison to related research.
+
+
+\vspace{1cm}
+\section{Proposed Tasks}
+\begin{itemize}
+	\item \textbf{Project diary}---a record of the project's on-going development.
+	Done in the form of a blog using the personal webpage provided by Aberystwyth University.
+	
+	\item \textbf{Research reading}---further reading of relevant research will likely be required to effectively progress in the project.
+	May also influence the project's direction and methods.
+	
+	\item \textbf{Refining use of Agile techniques}---as the Agile methodology is not best suited to a research solo project, effectiveness of its techniques should be evaluated.
+	Useful aspects of Agile more suited to this project should be identified early on.
+	
+	\item \textbf{Modelling the data}---application of chosen data mining techniques to produce a model of the data.
+	Probably using Python with relevant libraries.
+	Includes the use of test sets to produce a measure of accuracy.
+	
+	\item \textbf{Production of report}---final write-up of the project for hand-in.
+	Will include further discussion and conclusion of the used techniques and produced models.
+
+\end{itemize}
+
+
+\vspace{1cm}
+\section{Project Deliverables}
+\begin{itemize}
+	\item \textbf{Datasets}---the datasets used in the project, after extracting the useful data.
+	Will be produced at the start of the project, with potential modification to suit changing needs.
+	
+	\item \textbf{GitHub source control}---a GitHub \cite{gh} repository containing a backup of the project history.
+	Mainly serving as a fail-safe to protect the work done.
+	This should be set up at the start of the project and used throughout to track changes in the project deliverables.
+	
+	\item \textbf{Data models}---the software developed to represent the data, and its output.
+	Will be started following acquirement of a suitable dataset, with ideally at least one good model produced before the mid-project demonstration.
+	
+	\item \textbf{Data visualisation}---graphical representation of the models and/or initial data.
+	Acts as a visual aid in the final report.
+	Can be started once a data model has been made, ideally with one being produced for the mid-project demonstration.
+	
+	\item \textbf{Final report}---the document compiling all work done with additional discussion.
+	This will be the last work to be completed.
+
+\end{itemize}
+
+\vspace{1cm}
+\begin{thebibliography}{9}
+	\bibitem{kaw09}
+	J. Kawale, A. Pal and J. Srivastava,
+	``Churn Prediction in MMORPGs: A Social Influence Based Approach,'' 2009 International Conference on Computational Science and Engineering,
+	Vancouver, BC,
+	2009,
+	pp. 423-428.
+	
+	\bibitem{shen12}
+	C. Shen, P. Monge, and D. Williams,
+	``Virtual Brokerage and Closure: Network Structure and Social Capital in a Massively Multiplayer Online Game''
+	Communication Research, vol. 41, no. 4,
+	2014,
+	pp. 459–480, 
+	doi:10.1177/0093650212455197.
+	
+	\bibitem{lee18}
+	E. Lee, J. Woo, H. S. Kim, and H. K. Kim,
+	``No Silk Road for Online Gamers!: Using Social Network Analysis to Unveil Black Markets in Online Games,''
+	Proc. 2018 World Wide Web Conf.,
+	2018,
+	pp. 1825-1834.
+	
+	\bibitem{ccp}
+	CCP Games,
+	\textit{EVE Swagger Interface},
+	[Online],
+	Available: https://esi.evetech.net.
+	[Accessed Feb. 13 2020]
+	
+	\bibitem{gh}
+	GitHub, Inc,
+	\textit{GitHub}.
+	[Online],
+	Available: https://github.com.
+	[Accessed Feb. 13 2020].
+	
+\end{thebibliography}
+
+\end{document}
